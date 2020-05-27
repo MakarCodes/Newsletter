@@ -1,0 +1,28 @@
+#aside {
+    width: 98%;
+    margin: 0 auto;
+    
+    .img-aside-container {
+        position: relative;
+        .weight {
+            background-color: $feature-green-color;
+            color: white;
+            font-weight: 700;
+            padding: 8px 12px;
+            font-size: 1.5rem;
+            border-radius: 6px;
+            position: absolute;
+            transform: rotate(15deg);
+            bottom: -8%;
+            right: 2%;
+        }
+    }
+
+    .star {
+        color: $feature-green-color;
+        margin-right: 4px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

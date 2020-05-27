@@ -1,8 +1,12 @@
-// import { run } from "./app/app";
 import "./main.scss";
-// import { AlertService } from "./app/alert.service";
-// import { ComponentService } from "./app/component.service";
-// const alertService = new AlertService();
-// const componentService = new ComponentService();
-// run(alertService, componentService);
-// console.log("J");
+import { animateValue, counterId } from './app/app'
+
+const scrollEventListenerHandler = function() {
+    const heightOfHeaderBar = document.querySelector(`#${counterId}`).offsetHeight;
+  
+      if(window.pageYOffset >= heightOfHeaderBar) {
+          animateValue(counterId, 30, 0, 2000);
+          window.removeEventListener("scroll", scrollEventListenerHandler);
+      } 
+    }
+window.addEventListener('scroll', scrollEventListenerHandler);

@@ -5,6 +5,8 @@ $danger: #DB3318;
 @import './styles/header.scss';
 @import './styles/asideContent.scss';
 @import './styles/mainContent.scss';
+@import './styles/formContent.scss';
+@import './styles/footerContent.scss';
 
 body {
     background-color: $background-margin-color;
@@ -17,5 +19,31 @@ body {
         padding: 0;
         margin: 0;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    #main {
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+    #aside {
+        display: none;
+    }
+
+    .pic-container {
+        padding: 1rem !important;
+        background-size: cover !important;
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.4rem;
+        }
+        ul {
+            padding-inline-start: 5px;
+            padding: 6px;
+        }
+        .star {
+            margin-left: 10px;
+        }
     }
 }

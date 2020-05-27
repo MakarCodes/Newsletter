@@ -1,0 +1,70 @@
+#buy-form {
+    border: solid 1px #ccc;
+    .form-group {
+        position: relative;
+        .help {
+            position: absolute;
+            right: 10px;
+            top: 37px;
+            .exclamation-mark-icon {
+                width: 26px;
+                height: 26px;
+                border-radius: 13px;
+                line-height: 26px;
+                background-color: gray;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover {
+                    & + .help-tooltip {
+                        opacity: 1;
+                    }
+                }
+            }
+            .help-tooltip {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateY(calc(-100% - 5px));
+                padding: 10px;
+                border-radius: 4px;
+                background-color: black;
+                white-space: nowrap;
+                color: white;
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+    .form-title {
+        color: $form-buy-color;
+        padding-bottom: 6px;
+        border-bottom: solid 1px #ccc;
+    }
+    .form-info {
+        color: $form-shipping-color;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .payment-description {
+        font-size: 0.7rem;
+    }
+    button {
+        background-color: $form-buy-color;
+        border-color: $form-buy-color;
+        padding: 12px 0;
+        margin-bottom: 15px;
+    }
+    th {
+        border: solid 1px black;
+        padding: 4px;
+    }
+
+    .shipping {
+        color: $form-shipping-color;
+    }
+    .topay {
+        color: $form-buy-color;
+    }
+}

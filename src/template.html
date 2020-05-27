@@ -13,8 +13,8 @@
     </header>
       <div class="container-fluid">
         <div class="row my-row">
-          <main class="col-9 pr-3 px-0">
-                <h1 class="my-3 mr-5 title">
+          <main id="main" class="col-9 pr-3 px-0 mt-3">
+                <h1 class="mb-3 mr-5 title">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam vitae quia perspiciatis placeat ipsum in consequuntur porro tenetur voluptatem. Aut delectus <span>pariatur repellat pariatur repellat</span> pariatur repellat aliquam. Voluptatem ipsa reprehenderit
                 </h1>
                 <article id="main-content">
@@ -110,8 +110,7 @@
                   <section id="eighth-section">
                     <h2>
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, illum. Laboriosam placeat obcaecati corrupti eveniet, harum molestiae!
-                    </h2>
-                    <h2>
+                      <br><br>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem animi, praesentium quibusdam aliquid ut possimus veniam sunt asperiores reprehenderit eum! Harum, voluptas ea!
                     </h2>
                     <p class="mb-0 text-lowercase">
@@ -210,7 +209,7 @@
                         <div class="col-3 p-0 d-flex justify-content-center align-items-center">
                           <div class="text-center font-weight-bold counter-container">
                             <p>Lorem ipsum dolor sit amet lorem amet</p>
-                            <span id="counter" class="display-2">23</span>
+                            <span id="counter" class="display-2 timerAnimation">23</span>
                           </div>
                         </div>
                       </div>
@@ -221,14 +220,290 @@
                     <p class="text-center mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At rem nisi praesentium molestias tenetur doloribus voluptatum repellendus iure? Nostrum nisi unde reiciendis sint cum consequatur suscipit exercitationem itaque, atque dicta.</p>
                   </section>
                 </article>
+
+                <form id="buy-form" class="p-3">
+                  <h2 class="form-title">Formularz zamówienia</h2>
+                  <p><span class="font-weight-bold">Yo!</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, voluptatum recusandae omnis ad illum error. Animi, aperiam quaerat, maiores voluptatibus tempore eveniet dolore vitae nam aspernatur aliquam similique odio amet consectetur pariatur unde! Id doloribus aspernatur in iusto iste consequuntur.</p>
+                  <p class="form-info">Lorem ipsum dolor sit</p>
+                  <div class="form-group">
+                    <div class="help">
+                      <div class="exclamation-mark-icon">?</div>
+                      <div class="help-tooltip">TEXT POMOCNICZY NA HOVER</div>
+                    </div>
+                    <label for="email" class="font-weight-bold">Email address:</label>
+                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your email..." data-validation_type="email" required="true">
+                    <small id="emailHelp" class="form-text text-muted">(necessary for shippment)</small>
+                  </div>
+                  <div class="form-group">
+                    <div class="help">
+                      <div class="exclamation-mark-icon">?</div>
+                      <div class="help-tooltip">TEXT POMOCNICZY NA HOVER</div>
+                    </div>
+                    <label for="phone" class="font-weight-bold">Phone number:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+48 123 123 568" aria-describedby="phoneHelp" data-validation_type="telephone_number" required="true">
+                    <small id="phoneHelp" class="form-text text-muted">(necessary for shippment)</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="font-weight-bold">First and last name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name and last name..." aria-describedby="nameHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="adress" class="font-weight-bold">Adress:</label>
+                    <input type="text" class="form-control" id="adress" placeholder="Street number of house and flat..." aria-describedby="adressHelp">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <label for="zipcode" class="font-weight-bold">Zip:</label>
+                      <input type="text" class="form-control" id="zipcode" placeholder="ZIP Code...">
+                    </div>
+                    <div class="form-group col-md-8">
+                      <label for="city" class="font-weight-bold">City:</label>
+                      <input type="text" class="form-control" id="city" placeholder="City...">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="country" class="font-weight-bold">Country</label>
+                    <select class="form-control" id="country">
+                      <option>United States</option>
+                      <option>Poland</option>
+                      <option>Brasil</option>
+                      <option>Germany</option>
+                      <option>Italy</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <p class="font-weight-bold">Payment method</p>
+                    <p class="payment-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis minima, eius saepe vel officia nihil perspiciatis quam excepturi ratione ea.</p>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 submit_form_button">Buy</button>
+                  <div class="paymant-summary d-flex justify-content-center align-items-center">
+                    <table class="table w-25">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="text-center font-weight-normal">to pay</th>
+                          <th scope="col" class="text-center topay">99$</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="col" class="text-center font-weight-normal">shipping</th>
+                          <th scope="col" class="text-center shipping">free</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
           </main>
-          <div class="col-3 my-col">
-            <aside>
-              ASIDE CONTENT
+            <aside id="aside" class="col-3 my-col mt-3">
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
+              <div class="card w-100 mb-5">
+                <div class="img-aside-container">
+                  <img class="card-img-top" src="./assets/user01.jpg" alt="Card image cap">
+                  <span class="weight">-17kg</span>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-danger font-weight-bold"><q>Lorem ipsum consectetur dolor sit amet consectetur</q></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni at mollitia blanditiis cum, asperiores necessitatibus velit inventore dolorum amet! Earum possimus aliquam, temporibus quae, accusantium fugit architecto voluptate sit non debitis molestias perspiciatis optio ut atque in asperiores at aut? Consequuntur similique animi blanditiis voluptates aperiam. Soluta enim placeat, asperiores fugiat suscipit praesentium architecto, odit optio a aperiam deserunt dolore?</p>
+                  <div class="d-flex justify-content-center">
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                    <span class="star"><i class="fa fa-star star fa-2x"></i></span>
+                  </div>
+                  <p class="text-center">John Doe (68l.) - New York</p>
+                </div>
+              </div>
             </aside>
-          </div>
         </div>
       </div>
+              <footer id="footer" class="container-fluid">
+                <div class="footer-container d-flex justify-content-center align-items-center">
+                  <a href="#">Privacy policy</a>
+                  <a href="#">Terms and conditions</a>
+                  <a href="#">Contact</a>
+                </div>
+              </footer>
   </div>
 </body>
 </html>

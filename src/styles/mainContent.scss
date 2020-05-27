@@ -27,7 +27,7 @@ main {
                 background-color: $marked-text-color;
             }
             .banner {
-                font-size: 60px;
+                font-size: 3rem;
                 font-weight: bold;
                 color: $banner-color;
                 border: solid 5px $banner-color;
@@ -92,7 +92,7 @@ main {
                 background-image: url('./assets/assembled-border.png');
                 background-repeat: no-repeat;
                 background-position: center center;
-                background-size: cover;
+                background-size: 100% 100%;
                 ul {
                     li {
                         list-style-type: none;
