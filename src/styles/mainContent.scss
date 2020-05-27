@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+main {
+    h1.title {
+        font-size: 28px;
+        font-weight: 400;
+        color: $main-title-color;
+        text-align: left;
+        span {
+            font-weight: 700;
+        }
+    }
+    #main-content {
+        h2 {
+            color: $titles-red-color;
+            font-size: 22px;
+            margin: 24px 0;
+        }
+        span{
+            font-weight: 700;
+        }
+
+        #seventh-section h6 {
+            background-color: $photo-caption-color;
+        }
+        #eighth-section {
+            .marked-text {
+                color: #DB3318;
+                background-color: $marked-text-color;
+            }
+            .banner {
+                font-size: 60px;
+                font-weight: bold;
+                color: $banner-color;
+                border: solid 5px $banner-color;
+                border-width: 3px 5px 2px 5px;
+                padding: 20% 0;
+            }
+            .marked-text-two {
+                color: $marked-text-color;
+                background-color: $marked-green-text-color;
+                font-size: 1.2rem;
+            }
+
+            .list-number {
+                list-style-type: decimal;
+                font-size: 1.25rem;
+                font-weight: 500;
+                p {
+                    font-size: 1rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        #ninth-section{
+            .list-arrow {
+                list-style-type: none;
+                position: relative;
+                .arrow {
+                    position: absolute;
+                    top: 3px;
+                    left: -24px;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: url('./assets/list-arrow.jpg');
+                }
+                p {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

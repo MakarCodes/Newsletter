@@ -1,0 +1,21 @@
+$primary: teal;
+$danger: purple;
+@import "~bootstrap/scss/bootstrap";
+@import './styles/variables.scss';
+@import './styles/header.scss';
+@import './styles/asideContent.scss';
+@import './styles/mainContent.scss';
+
+body {
+    background-color: $background-margin-color;
+    color: $font-black-color;
+    .outside-container {
+        box-shadow: 6px 0 10px -4px rgba(84, 84, 85, 0.8), -6px 0 10px -4px rgba(84, 84, 85, 0.8);
+        padding: 0;
+    }
+    .my-row, .my-col {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
