@@ -1,6 +1,6 @@
-$primary: teal;
-$danger: purple;
+$danger: #DB3318;
 @import "~bootstrap/scss/bootstrap";
+@import '~font-awesome/css/font-awesome.css';
 @import './styles/variables.scss';
 @import './styles/header.scss';
 @import './styles/asideContent.scss';

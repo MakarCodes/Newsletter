@@ -2,7 +2,7 @@
 
 main {
     h1.title {
-        font-size: 28px;
+        font-size: 2rem;
         font-weight: 400;
         color: $main-title-color;
         text-align: left;
@@ -13,10 +13,8 @@ main {
     #main-content {
         h2 {
             color: $titles-red-color;
-            font-size: 22px;
+            font-size: 1.5rem;
             margin: 24px 0;
-        }
-        span{
             font-weight: 700;
         }
 
@@ -53,7 +51,7 @@ main {
             }
         }
 
-        #ninth-section{
+        #ninth-section {
             .list-arrow {
                 list-style-type: none;
                 position: relative;
@@ -68,6 +66,69 @@ main {
                 }
                 p {
                     display: inline-block;
+                }
+            }
+        }
+        #tenth-section {
+            .sign-container {
+                position: relative;
+                i {
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: rotate(-10deg) translate(-50%, -50%);
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+        #elventh-section {
+            .pic-container {
+                flex-flow: column;
+                background-image: url('./assets/assembled-border.png');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                ul {
+                    li {
+                        list-style-type: none;
+                        .star {
+                            color: $feature-green-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        #twelfth-section {
+            position: relative;
+            .sati-sign {
+                position: absolute;
+                bottom: 0.5%;
+                left: 3%;
+                width: 18%;
+            }
+            .counter-container {
+                font-size: 1.2rem;
+            }
+            .price-container {
+                position: relative;
+                .price {
+                    text-decoration: line-through;
+                    font-size: 1.6rem;
+                    &::after {
+                        content: '99$';
+                        font-size: 2.8rem;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        font-weight: 700;
+                        margin-left: 10px;
+                    }
                 }
             }
         }
