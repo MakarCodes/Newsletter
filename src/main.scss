@@ -20,6 +20,10 @@ body {
         margin: 0;
         width: 100%;
     }
+
+    .k {
+        user-select: none;
+    }
 }
 
 @media only screen and (max-width : 1024px) {

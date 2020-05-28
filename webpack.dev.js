@@ -2,6 +2,8 @@ const path = require("path");
 const common = require("./webpack.common");
 const merge = require("webpack-merge");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+const autoprefixer = require("autoprefixer");
 
 module.exports = merge(common, {
   mode: "development",
@@ -12,7 +14,14 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html"
-    })
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+          postcss: [
+              autoprefixer()
+          ]
+      }
+  })
   ],
   module: {
     rules: [
@@ -31,6 +40,7 @@ module.exports = merge(common, {
         use: [
           "style-loader", //3. Inject styles into DOM
           "css-loader", //2. Turns css into commonjs
+          "postcss-loader",
           "sass-loader" //1. Turns sass into css
         ]
       }
