@@ -18,10 +18,22 @@ main {
             font-weight: 700;
         }
 
+        #first-section {
+            .img-container {
+                float: right;
+                width: 50%;
+                margin-top: 0!important;
+                padding-left: 10px;
+            }
+        }
+
         #seventh-section h6 {
             background-color: $photo-caption-color;
         }
         #eighth-section {
+            h5 {
+                font-weight: 700;
+            }
             .marked-text {
                 color: #DB3318;
                 background-color: $marked-text-color;

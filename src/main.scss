@@ -21,8 +21,11 @@ body {
         width: 100%;
     }
 
-    .k {
-        user-select: none;
+    .errorField {
+        background-color: red;
+        color: white;
+        padding: 6px 8px;
+        border-radius: 4px;
     }
 }
 
@@ -37,10 +40,9 @@ body {
 
     .pic-container {
         padding: 1rem !important;
-        background-size: cover !important;
         h3 {
             font-size: 1.5rem;
-            margin-top: 1.4rem;
+            padding-top: 2rem;
         }
         ul {
             padding-inline-start: 5px;
@@ -50,4 +52,10 @@ body {
             margin-left: 10px;
         }
     }
+    #twelfth-section {
+        .sign-container {
+            margin-left: 50%;
+        }
+    }
+
 }
